@@ -1,0 +1,59 @@
+---
+// Home page CTA Section
+// ------------
+// Description: A centered call to action section that contains: a title, text, a user review snippet, a button and a image.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Button from '../../ui/Button.astro'
+import AvatarGroup from '../../ui/AvatarGroup.astro'
+
+// Content
+// - Hero Image
+import heroImage from '../../../assets/salon.jpg'
+// - Avatars
+import user1 from '../../../assets/avatars/avatar-01.webp'
+import user2 from '../../../assets/avatars/avatar-02.webp'
+import user3 from '../../../assets/avatars/avatar-03.webp'
+const avatars = [
+	{ image: { src: user1.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user2.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user3.src, alt: 'user name' }, link: '/' }
+]
+---
+
+<Section id="intro" classes="relative min-h-screen flex items-center pt-0 pb-20 -mt-32">
+	<!-- Background Image -->
+	<div class="absolute inset-0 -top-32 z-0">
+		<Image
+			src={heroImage}
+			alt="Fincas Trovador - Su agencia inmobiliaria de confianza frente a la Aljafería"
+			class="w-full h-[calc(100%+8rem)] object-cover"
+			format="webp"
+		/>
+		<!-- Overlay for better text readability -->
+		<div class="absolute inset-0 bg-black/20"></div>
+	</div>
+	
+	<!-- Content -->
+	<Row classes="relative z-10">
+		<Col span="2" />
+		<Col span="8" align="center">
+			<!-- <ChipNotification radius="rounded-full" classes="mb-6">
+				<strong>30K+</strong> satisfied customers
+				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
+			</ChipNotification> -->
+			<h1 class="text-white drop-shadow-lg">Su agencia inmobiliaria de confianza <strong> frente a la Aljafería </strong> </h1>
+
+			<!-- <p class="pb-0 text-lg">Work smarter, not harder, with our innovative platform</p> -->
+			<Button size="lg" link="/">Contactar</Button>
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
