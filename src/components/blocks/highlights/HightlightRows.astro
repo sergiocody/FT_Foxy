@@ -4,6 +4,10 @@
 // Description: A section with a multiple text and image rows.
 
 // Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
 // - UI
 import TextImage from '../basic/TextImage.astro'
 
@@ -28,8 +32,8 @@ type HighlightBlock = {
 }
 const highlightBlocks: HighlightBlock[] = [
 	{
-		title: 'Complete Project <strong>Visibility</strong>',
-		text: 'Gain complete visibility into your projects and tasks with our comprehensive dashboard. Easily track progress, deadlines, and team performance at a glance. Our dashboard offers real-time project tracking',
+		title: 'Vender tu <strong>inmueble</strong>',
+		text: 'Valoración realista, fotos profesionales y negociación hasta la firma.',
 		image: highlight01,
 		imageWidth: highlight01.width,
 		imageHeight: highlight01.height,
@@ -37,8 +41,8 @@ const highlightBlocks: HighlightBlock[] = [
 		imagePosition: 'right'
 	},
 	{
-		title: 'Advanced <strong>Automation</strong> Tools',
-		text: 'Automate repetitive tasks and streamline your workflow with our advanced automation tools. Save time and reduce errors by leveraging automated task assignments, workflow templates, and seamless integration with popular apps and services.',
+		title: 'Alquilar con  <strong>seguridad</strong>',
+		text: 'Selección de inquilino solvente, contrato actualizado y entrega con inventario.',
 		image: highlight02,
 		mobileImage: highlight02mobile,
 		imageWidth: highlight02.width,
@@ -46,8 +50,8 @@ const highlightBlocks: HighlightBlock[] = [
 		imagePosition: 'left'
 	},
 	{
-		title: '<strong>Effective</strong> Team Collaboration',
-		text: 'Enhance team communication and collaboration with our seamless tools. Keep everyone on the same page and ensure efficient project execution through real-time messaging, shared document editing, and task comments. ',
+		title: '<strong>Vender</strong> vivienda',
+		text: 'Visitas con criterio y acompañamiento notarial/financiación. ',
 		image: highlight03,
 		mobileImage: highlight03mobile,
 		imageWidth: highlight03.width,
@@ -55,8 +59,8 @@ const highlightBlocks: HighlightBlock[] = [
 		imagePosition: 'right'
 	},
 	{
-		title: 'Robust Data <strong>Security</strong>',
-		text: 'Protect your data with our robust security features. We prioritize your privacy and security to ensure that your information is always safe. With end-to-end encryption, role-based access control, and regular security audits.',
+		title: 'Locales  <strong>comerciales</strong>',
+		text: 'Especialistas en ejes urbanos: análisis de ubicación y negociación de carencias/garantías.',
 		image: highlight04,
 		mobileImage: highlight04mobile,
 		imageWidth: highlight04.width,
@@ -65,6 +69,14 @@ const highlightBlocks: HighlightBlock[] = [
 	}
 ]
 ---
+
+<Section id="servicios" padding="none" classes="pb-0 scroll-mt-24">
+	<Row>
+		<Col span="12" align="center" classes="mb-2 max-w-4xl mx-auto">
+			<h2 class="text-pretty">Servicios de <strong>Fincas Trovador</strong></h2>
+		</Col>
+	</Row>
+</Section>
 
 {
 	highlightBlocks.map((highlight, key) => (

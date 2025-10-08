@@ -39,6 +39,8 @@ export const navigationBarData: NavData = {
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
+		{ name: 'Servicios', link: '/#servicios' },
+		{ name: 'FAQ', link: '/faq' },
 		{ name: 'Contact', link: '/contact' }
 	],
 	navActions: [{ name: 'Lista de propiedades', link: 'https://www.idealista.com/pro/fincastrovador/', style: 'primary', size: 'lg' }]
