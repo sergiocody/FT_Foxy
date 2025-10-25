@@ -28,84 +28,84 @@ export interface SubFooter {
 }
 
 export interface FooterData {
-	footerAbout: FooterAbout
-	footerColumns: FooterColumn[]
+	footerAbout?: FooterAbout
+	footerColumns?: FooterColumn[]
 	subFooter: SubFooter
 }
 
 export const footerNavigationData: FooterData = {
-	footerAbout: {
-		title: 'Fincas Trovador',
-		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
-		logo: {
-			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Fincas Trovador'
-		}
-	},
-	footerColumns: [
-		{
-			category: 'Product',
-			subCategories: [
-				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
-				},
-				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
-				},
-				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
-				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
-				}
-			]
-		},
-		{
-			category: 'About us',
-			subCategories: [
-				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
-				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
-				}
-			]
-		}
-	],
+	// footerAbout: {
+	// 	title: 'Fincas Trovador',
+	// 	aboutText:
+	// 		'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+	// 	logo: {
+	// 		src: '/logo.svg',
+	// 		alt: 'The tailwind astro theme',
+	// 		text: 'Fincas Trovador'
+	// 	}
+	// },
+	// footerColumns: [
+	// 	{
+	// 		category: 'Product',
+	// 		subCategories: [
+	// 			{
+	// 				subCategory: 'Features',
+	// 				subCategoryLink: '/features'
+	// 			},
+	// 			{
+	// 				subCategory: 'FAQ',
+	// 				subCategoryLink: '/faq'
+	// 			},
+	// 			{
+	// 				subCategory: 'Pricing',
+	// 				subCategoryLink: '/pricing'
+	// 			},
+	// 			{
+	// 				subCategory: 'Changelog',
+	// 				subCategoryLink: '/changelog'
+	// 			},
+	// 			{
+	// 				subCategory: 'Terms',
+	// 				subCategoryLink: '/terms'
+	// 			}
+	// 		]
+	// 	},
+	// 	{
+	// 		category: 'About us',
+	// 		subCategories: [
+	// 			{
+	// 				subCategory: 'About us',
+	// 				subCategoryLink: '/'
+	// 			},
+	// 			{
+	// 				subCategory: 'News',
+	// 				subCategoryLink: '/blog'
+	// 			},
+	// 			{
+	// 				subCategory: 'Careers',
+	// 				subCategoryLink: '/blog'
+	// 			}
+	// 		]
+	// 	},
+	// 	{
+	// 		category: 'Get in touch',
+	// 		subCategories: [
+	// 			{
+	// 				subCategory: 'Contact',
+	// 				subCategoryLink: '/contact'
+	// 			},
+	// 			{
+	// 				subCategory: 'Support',
+	// 				subCategoryLink: '/contact'
+	// 			},
+	// 			{
+	// 				subCategory: 'Join us',
+	// 				subCategoryLink: '/contact'
+	// 			}
+	// 		]
+	// 	}
+	// ],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© Fincas Trovador - Zaragoza'
 	}
 }
